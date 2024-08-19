@@ -116,7 +116,9 @@ insert into Cricket(name,cName,age) values ('Vijay Raval','Rajkot',30)
 	select * from Borrow
 	
 --2. Customer deposits additional 20% amount to their account, update the same. (Use Deposit Table)
-	select 
+	update Deposit
+	set amount=amount*0.2
+	select * from Deposit
 
 
 						--PART-C--
@@ -136,6 +138,8 @@ insert into Cricket(name,cName,age) values ('Vijay Raval','Rajkot',30)
 	where amount is null
 
 --4. Display the Borrowers whose having branch. (Use Borrow Table)
+	select * from Borrow
+	where bName != null
 	
 --5. Update the Loan Amount to 5000, Branch to VRCE & Customer Name to Darshan whose loan no is 481.
 --(Use Borrow Table)
@@ -149,7 +153,7 @@ insert into Cricket(name,cName,age) values ('Vijay Raval','Rajkot',30)
 	set aDate = '2021-01-01'
 	where amount<2000
 
---7. Update the Deposit table and set the date to NULL & Branch name to ‘ANDHERI whose Account No is
+--7. Update the Deposit table and set the date to NULL & Branch name to â€˜ANDHERI whose Account No is
 --110.
 	update Deposit
 	set aDate = null,bName='ANDHERI'

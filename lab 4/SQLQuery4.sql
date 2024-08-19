@@ -117,7 +117,7 @@
 	delete from Employee_Master
 	where salary >= 14000
 
---2. Delete all the Employees who belongs to ‘RAJKOT’ city.
+--2. Delete all the Employees who belongs to â€˜RAJKOTâ€™ city.
 	delete from Employee_Master
 	where city = 'Rajkot'
 
@@ -146,6 +146,7 @@
 
 
 					-----PART-C-----
---1. Delete --> Data can be recover
+					--Summarize--
+--1. Delete --> Data can be recover.
 --2. Truncate --> Data can't recover
 --3. Drop --> Whole table include structure also delete
